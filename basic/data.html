@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- data-* : 사용자 정의 데이터 속성 지정 
+                : 스크립트에서 이용할 수 있는 데이터(정보)를 저장 -->
+    <div id="me" data-my-name="admin" data-my-age="851">Adin</div>
+    <!-- 사용자 정의 속성을 스크립트로 불러와 사용하는 방법 -->
+    <script>
+      //자바스크립트 : 대소문자 구별
+      const me = document.getElementById("me"); //상수 선언 : 객체(document)에서 element를 id를 통해 불러옴
+      console.log(me.dataset.myName); //myName = my-name
+      console.log(me.dataset.myAge); //myAge = my-age
+      //console.log : f12 > console > 출력됨(like System.out.println())
+      //콘솔에 로그를 남겨라!
+    </script>
+  </body>
+</html>
